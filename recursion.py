@@ -2,9 +2,7 @@
 
 
 def fibonacci(n):
-    """
-    Returns the nth Fibonacci number using recursion.
-    """
+    
     if n <= 0:
         raise ValueError("Input must be a positive integer.")
     if n == 1:
@@ -16,22 +14,14 @@ def fibonacci(n):
 
 
 def gcd(a, b):
-    """
-    Returns the greatest common divisor (GCD) of two integers a and b using recursion.
-    """
+   
     if b == 0:
         return a
     return gcd(b, a % b)
 
 
 def compareTo(s1, s2):
-    """
-    Recursively compares two strings s1 and s2.
-    Returns:
-      - a negative number if s1 < s2
-      - 0 if s1 == s2
-      - a positive number if s1 > s2
-    """
+   
     if not s1 and not s2:  
         return 0
     if not s1:  
